@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bicycle Survey Form</title>
+        <meta name="Description" content="A project for freeCodeCamp, this survey form asks questions about a person's bicycle riding behavior">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="icon" href="favicon.png"  type="image/png"> 
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1 id="title">Rate our Design!</h1>
+            </header>
+            <main>
+                <p id="description">Please let us know your experience with our website</p>
+                <form id="survey-form">
+                    <fieldset class="section-fieldset">
+                        <legend><span class="number">1</span> Your basic info</legend>
+                        <label class="light" id="name-label" for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Ritesh Kumar" required>
+                        <label class="light" id="email-label"  for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="ritesh.kumar@gmail.com" required>
+                        <label class="light" id="location-label"  for="location">Location:</label>
+                        <input type="text" id="location" name="user_location" placeholder="India" required>
+                        <label class="light" id="number-label" for="number">Age:</label>
+                        <input type="number" id="number" name="user_age" min="18" max="115" placeholder="20" required>
+
+                        <label>what describe you the best?  [check all that apply]</label>
+                        <input type="checkbox" id="1" value="1_reason" name="user_reason">
+                        <label class="light" for="1">Student</label><br>
+                        <input type="checkbox" id="2" value="2_reason" name="user_reason">
+                        <freelancer class="light" for="2">Freelancer</label><br>
+                        <input type="checkbox" id="3" value="3_reason" name="user_reason">
+                        <label class="light" for="4">Working professional</label><br>
+                        <input type="checkbox" id="5" value="5_reason" name="user_reason">
+                        <label class="light" for="5">Designer</label><br>
+                        <input type="checkbox" id="6" value="6_reason" name="user_reason">
+                        <label class="light" for="6">Developer</label><br>
+                        <input type="checkbox" id="7" value="7_reason" name="user_reason">
+                        <label class="light" for="7">Copywritter</label>
+
+                    </fieldset>
+                    <fieldset class="section-fieldset">
+                        <legend><span class="number">2</span> Your review</legend>
+                        
+                        <label for="dropdown">Please rate my Design: </label>
+                        <select id="dropdown" name="biking_frequency">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Bad">Bad</option>
+                            <option value="Not_Bad">Not Bad</option>
+                            <option value="okay">okay</option>
+                            <option value="good">good</option>
+                            <option value="very_good">very good</option>
+                            <option value="excellent">excellent</option>
+                        </select>
+                        <br>
+                        <label for="improvements">How would you suggest I improve it?</label>
+                        <textarea id="improvements" name="biking_improvements"></textarea>
+                    </fieldset>
+                    <button id="submit" type="submit">Submit</button>
+                    <p style="text-align:center;">Thank you for your time ❤</p>
+                </form>
+                 
+            </main>
+        </div>
+           
+    </body>
+</html>
